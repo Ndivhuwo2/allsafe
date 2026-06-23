@@ -1,46 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Khakhu Ndivhuwo | Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            <h1>Khakhu Ndivhuwo</h1>
-            <p class="tagline">Computer Science student at Wits | Aspiring cybersecurity professional and web developer.</p>
+        <!-- Hero section — name, role, and navigation -->
+        <header class="hero">
+            <div class="hero-inner">
+                <p class="hero-label">Portfolio</p>
+                <h1 class="hero-name">Khakhu Ndivhuwo<span class="cursor">_</span></h1>
+                <p class="hero-tagline">Computer Science student at Wits &mdash; building toward cybersecurity and web development.</p>
+                <nav class="hero-nav">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </header>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I am a second year Computer Science student at the University of the Witwatersrand. 
-                I am currently building my portfolio through projects in web development and cybersecurity. 
-                I have experience in Python, Java, C++ and SQL.
-            </p>
-        </section>
+        <main class="content">
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>SQL</li>
-                <li>HTML & CSS</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+            <!-- About section -->
+            <section id="about">
+                <p class="section-label">01 &mdash; About</p>
+                <p class="section-body">
+                    I am a second-year Computer Science student at the University of the Witwatersrand. 
+                    I build projects in web development and cybersecurity to grow a portfolio that reflects 
+                    real technical ability. I work in Python, Java, C++, SQL, and have recently begun building 
+                    full-stack web applications with Flask.
+                </p>
+            </section>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <p>Projects coming soon — currently in development.</p>
-        </section>
+            <!-- Skills section -->
+            <section id="skills">
+                <p class="section-label">02 &mdash; Skills</p>
+                <div class="skills-grid">
+                    <span class="skill">Python</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Flask</span>
+                    <span class="skill">SQLAlchemy</span>
+                    <span class="skill">HTML &amp; CSS</span>
+                    <span class="skill">Git &amp; GitHub</span>
+                </div>
+            </section>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>GitHub: <a href="https://github.com/Ndivhuwo2">github.com/Ndivhuwo2</a></p>
-            <p>Email: <a href="mailto:ndivhuwokhakhu2@gmail.com">ndivhuwokhakhu2@gmail.com</a></p>
-        </section>
+            <!-- Projects section — ready to receive real projects -->
+            <section id="projects">
+                <p class="section-label">03 &mdash; Projects</p>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Lecture Summarizer</h3>
+                        <span class="project-status">In development</span>
+                    </div>
+                    <p class="project-desc">
+                        A web application that processes lecture content and generates concise, 
+                        structured summaries. Built collaboratively as a full-stack project.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Web App</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact">
+                <p class="section-label">04 &mdash; Contact</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Ndivhuwo2" target="_blank" class="contact-link">
+                        <span class="contact-platform">GitHub</span>
+                        <span class="contact-handle">github.com/Ndivhuwo2</span>
+                    </a>
+                    <a href="mailto:ndivhuwokhakhu2@gmail.com" class="contact-link">
+                        <span class="contact-platform">Email</span>
+                        <span class="contact-handle">ndivhuwokhakhu2@gmail.com</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>Khakhu Ndivhuwo &mdash; 2026</p>
+        </footer>
     </body>
 </html>
