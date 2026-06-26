@@ -1,93 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Khakhu Ndivhuwo | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ndivhuwo Khakhu — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <body>
-        <!-- Hero section — name, role, and navigation -->
-        <header class="hero">
-            <div class="hero-inner">
-                <p class="hero-label">Portfolio</p>
-                <h1 class="hero-name">Khakhu Ndivhuwo<span class="cursor">_</span></h1>
-                <p class="hero-tagline">Computer Science student at Wits &mdash; building toward cybersecurity and web development.</p>
-                <nav class="hero-nav">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+  <div id="portfolio">
+
+    <nav>
+      <div class="logo">NK<span>.</span></div>
+      <div class="nav-links">
+        <a onclick="document.getElementById('skills-section').scrollIntoView({behavior:'smooth'})">Skills</a>
+        <a onclick="document.getElementById('projects-section').scrollIntoView({behavior:'smooth'})">Projects</a>
+        <a onclick="document.getElementById('contact-section').scrollIntoView({behavior:'smooth'})">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-left">
+        <div>
+          <div class="availability"><div class="dot"></div> Available for opportunities</div>
+          <div class="hero-name">
+            <span class="first">Ndivhuwo</span>
+            <span class="last">Khakhu<span>.</span></span>
+          </div>
+          <p class="hero-bio">
+            CS student at <strong>Wits University</strong> building at the intersection of
+            <span class="link-text">software development</span> and <strong>cybersecurity</strong>.
+          </p>
+          <p class="tagline">I do not plan projects. I ship them.</p>
+        </div>
+      </div>
+      <div class="hero-right">
+    <div class="terminal">
+        <div class="terminal-bar">
+            <div class="terminal-btn red"></div>
+            <div class="terminal-btn yellow"></div>
+            <div class="terminal-btn green"></div>
+            <span class="terminal-title">nkhakhu@macbook ~ %</span>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-line">
+                <span class="prompt">nkhakhu@macbook <span class="prompt-symbol">~ %</span></span>
+                <span class="cmd">whoami</span>
             </div>
-        </header>
+            <div class="terminal-output">ndivhuwo khakhu</div>
+            <div class="terminal-line">
+                <span class="prompt">nkhakhu@macbook <span class="prompt-symbol">~ %</span></span>
+                <span class="cmd">cat status.txt</span>
+            </div>
+            <div class="terminal-output">available for opportunities</div>
+            <div class="terminal-line">
+                <span class="prompt">nkhakhu@macbook <span class="prompt-symbol">~ %</span></span>
+                <span class="cmd">echo $LOCATION</span>
+            </div>
+            <div class="terminal-output">johannesburg, za</div>
+            <div class="terminal-line">
+                <span class="prompt">nkhakhu@macbook <span class="prompt-symbol">~ %</span></span>
+                <span class="cmd">echo $FOCUS</span>
+            </div>
+            <div class="terminal-output">cybersecurity + web dev</div>
+            <div class="terminal-line">
+                <span class="prompt">nkhakhu@macbook <span class="prompt-symbol">~ %</span></span>
+                <span class="cursor-blink">█</span>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
 
-        <main class="content">
+    <section id="skills-section">
+      <div class="section-label">What I work with</div>
+      <div class="skills-grid">
+        <div class="skill-cell">
+          <div class="skill-cat">Academic</div>
+          <div class="skill-name">University</div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Personal</div>
+          <div class="skill-name">Web Development</div>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Flask</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">HTML &amp; CSS</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Personal</div>
+          <div class="skill-name">Data &amp; Backend</div>
+          <div class="skill-tags">
+            <span class="tag">SQLAlchemy</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-cell">
+          <div class="skill-cat">Personal</div>
+          <div class="skill-name">Tooling</div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- About section -->
-            <section id="about">
-                <p class="section-label">01 &mdash; About</p>
-                <p class="section-body">
-                    I am a second-year Computer Science student at the University of the Witwatersrand. 
-                    I build projects in web development and cybersecurity to grow a portfolio that reflects 
-                    real technical ability. I work in Python, Java, C++, SQL, and have recently begun building 
-                    full-stack web applications with Flask.
-                </p>
-            </section>
+    <section id="projects-section">
+      <div class="section-label">Selected work</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div>
+            <div class="proj-title">BrieflyAI</div>
+            <div class="proj-desc">An AI-powered web application that transforms lecture PDFs into clean, structured summaries. Upload a PDF and receive an AI-generated summary, extracted key concepts, identified formulas, and a downloadable styled PDF — all in seconds. Built for students, by students.</div>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-tag">React · FastAPI · Groq API</span>
+            <a href="https://github.com/Ndivhuwo2" target="_blank" style="text-decoration:none">
+              <span class="proj-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+  <div>
+    <div class="proj-title">CipherReport</div>
+    <div class="proj-desc">A secure web application that helps victims of cyberbullying document incidents, preserve and verify evidence, and build a chronological timeline of events — so they can report to schools, employers, or law enforcement with organised proof.</div>
+  </div>
+  <div class="proj-footer">
+    <span class="proj-tag">Security · Web App · Python</span>
+    <span class="proj-arrow">→</span>
+  </div>
+</div>
+      </div>
+    </section>
 
-            <!-- Skills section -->
-            <section id="skills">
-                <p class="section-label">02 &mdash; Skills</p>
-                <div class="skills-grid">
-                    <span class="skill">Python</span>
-                    <span class="skill">Java</span>
-                    <span class="skill">C++</span>
-                    <span class="skill">SQL</span>
-                    <span class="skill">Flask</span>
-                    <span class="skill">SQLAlchemy</span>
-                    <span class="skill">HTML &amp; CSS</span>
-                    <span class="skill">Git &amp; GitHub</span>
-                </div>
-            </section>
+    <section id="contact-section">
+      <div class="contact-row">
+        <div>
+          <div class="section-label">Get in touch</div>
+          <div class="contact-heading">Let's build something worth shipping.</div>
+          <p class="contact-sub">Open to internships, collaborations, and conversations about anything at the edge of software and security.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:ndivhuwokhakhu2@gmail.com" class="contact-link">
+            <div><div class="cl-label">Email</div><div class="cl-value">ndivhuwokhakhu2@gmail.com</div></div>
+            <span class="cl-arrow">→</span>
+          </a>
+          <a href="https://github.com/Ndivhuwo2" target="_blank" class="contact-link">
+            <div><div class="cl-label">GitHub</div><div class="cl-value">github.com/Ndivhuwo2</div></div>
+            <span class="cl-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-            <!-- Projects section — ready to receive real projects -->
-            <section id="projects">
-                <p class="section-label">03 &mdash; Projects</p>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Lecture Summarizer</h3>
-                        <span class="project-status">In development</span>
-                    </div>
-                    <p class="project-desc">
-                        A web application that processes lecture content and generates concise, 
-                        structured summaries. Built collaboratively as a full-stack project.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">Web App</span>
-                    </div>
-                </div>
-            </section>
+    <footer>
+      <div class="footer-copy">&copy; 2026 Ndivhuwo Khakhu</div>
+      <div class="footer-status">Wits University · CS · Johannesburg</div>
+    </footer>
 
-            <!-- Contact section -->
-            <section id="contact">
-                <p class="section-label">04 &mdash; Contact</p>
-                <div class="contact-links">
-                    <a href="https://github.com/Ndivhuwo2" target="_blank" class="contact-link">
-                        <span class="contact-platform">GitHub</span>
-                        <span class="contact-handle">github.com/Ndivhuwo2</span>
-                    </a>
-                    <a href="mailto:ndivhuwokhakhu2@gmail.com" class="contact-link">
-                        <span class="contact-platform">Email</span>
-                        <span class="contact-handle">ndivhuwokhakhu2@gmail.com</span>
-                    </a>
-                </div>
-            </section>
+  </div>
 
-        </main>
-
-        <footer class="footer">
-            <p>Khakhu Ndivhuwo &mdash; 2026</p>
-        </footer>
-    </body>
+</body>
 </html>
